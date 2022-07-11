@@ -15,7 +15,7 @@
 from math import factorial
 
 
-def main(n):
+def main(n: int) -> str:
     """
     Returns the `n`th lexicographically-ordered permutation of the digits 0123456789
 
@@ -23,10 +23,10 @@ def main(n):
         n (int): Index of desired permutation in lexicographic ordering (natural number)
 
     Returns:
-        `n`th lexicographically-ordered permutation of 0123456789
+        (str): `n`th lexicographically-ordered permutation of 0123456789
 
     Raises:
-        AssertError: if incorrect params are given
+        AssertError: if incorrect args are given
     """
     assert type(n) == int and n > 0
     n -= 1
